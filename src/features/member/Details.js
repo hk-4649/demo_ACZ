@@ -1,7 +1,7 @@
 import React from "react";
-import { Chart } from "./Chart";
-import { PowerSlider } from "./PowerSlider";
 import styles from "./member.module.css";
+import { DetailBody } from "./DetailBody";
+
 export const Details = () => {
   const member = {
     name: "ギリー",
@@ -9,8 +9,7 @@ export const Details = () => {
   return (
     <div>
       <div className={styles.details}>{member.name}</div>
-      <Chart />
-      <PowerSlider />
+      <DetailBody />
     </div>
   );
 };
