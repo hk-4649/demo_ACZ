@@ -2,7 +2,7 @@ import React from "react";
 import { Radar } from "react-chartjs-2";
 import styles from "./member.module.css";
 
-export const Chart = () => {
+export const Chart = (props) => {
   const data = {
     // x 軸のラベル
     labels: [
@@ -17,7 +17,7 @@ export const Chart = () => {
       {
         label: "Dataset",
         // データの値
-        data: [1, 2, 3, 4, 5, 5],
+        data: props.data,
         // グラフの背景色
         backgroundColor: "rgba(255, 205, 86, 0.2)",
         // グラフの枠線の太さ
