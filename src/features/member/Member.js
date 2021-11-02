@@ -1,6 +1,7 @@
 import React from "react";
 import { Items } from "./Items";
 import styles from "./member.module.css";
+import AddCircle from "@material-ui/icons/AddCircleOutline";
 
 const p = [
   {
@@ -24,6 +25,9 @@ export const Member = () => {
           </li>
         ))}
       </ul>
+      <button className={styles.addIcon}>
+        <AddCircle fontSize="large" />
+      </button>
     </div>
   );
 };
